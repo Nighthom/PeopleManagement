@@ -225,26 +225,6 @@ namespace PeopleManagement
 
         static void Main(string[] args)
         {
-            //// #1 Test
-            //PrintTestLine();
-            //Person person = new Person("승준", "01022170710", "qqq991124@naver.com");
-            //person.personal_info();
-
-            //// #2 Test
-            //PrintTestLine();
-            //Student student = new Student("승준", "01022170710", "qqq991124@naver.com", "20180679", "Computer", 1999);
-            //student.personal_info();
-
-            //// #3 Test
-            //PrintTestLine();
-            //student.ScholarShip = 600;
-
-            //// #4 Test
-            //PrintTestLine();
-            //Professor professor = new Professor("교수님", "01022170512", "asdasd@hnu.kr", "Professor", "90100", 20);
-            //professor.personal_info();
-
-            // UI Run
             PrintTestLine();
             RunUI();
         }
