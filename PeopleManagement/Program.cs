@@ -91,26 +91,8 @@ namespace PeopleManagement
     {
         // #5 Code
         static List<Person> persons = new List<Person>();
-        static void PrintTestLine()
-        {
-            Console.WriteLine($"-----------------------------------------------");
-            Console.WriteLine($"----------------- Test ------------------------");
-            Console.WriteLine($"-----------------------------------------------");
-        }
-        
-        // UI 실행(#6 ~)
-        static void RunUI()
-        {
-            while (true)
-            {
-                Console.WriteLine("1. 추가, 2. 현황출력, 3. 종료");
-                int evtNumber = Convert.ToInt32(Console.ReadLine());
-                // MenuEventHandler가 종료신호(true)를 반환하면 종료
-                if (MenuEventHandler(evtNumber) == true)
-                    return;
-            }
-        }
-
+                
+        // 사용자 입력 이벤트를 핸들링하는 함수
         static bool MenuEventHandler(int evtNumber)
         {
             switch (evtNumber)
@@ -225,8 +207,14 @@ namespace PeopleManagement
 
         static void Main(string[] args)
         {
-            PrintTestLine();
-            RunUI();
+            while (true)
+            {
+                Console.WriteLine("1. 추가, 2. 현황출력, 3. 종료");
+                int evtNumber = Convert.ToInt32(Console.ReadLine());
+                // MenuEventHandler가 종료신호(true)를 반환하면 프로그램 종료
+                if (MenuEventHandler(evtNumber) == true)
+                    return;
+            }
         }
     }
 }
