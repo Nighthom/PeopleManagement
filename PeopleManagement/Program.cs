@@ -87,7 +87,7 @@ namespace PeopleManagement
         }
     }
 
-    internal class Program
+    class Program
     {
         // #5 Code
         static List<Person> persons = new List<Person>();
